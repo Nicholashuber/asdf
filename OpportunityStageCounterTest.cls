@@ -52,5 +52,4 @@ public class OpportunityStageCounterTest {
         System.assertEquals(1, result.size(), 'Expected 1 stage in result');
         System.assertEquals(2, result.get('Stage1'), 'Expected 2 opportunities in Stage1');
     }
-
 }
