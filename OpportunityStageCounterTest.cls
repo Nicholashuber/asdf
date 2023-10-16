@@ -5,7 +5,14 @@ public class OpportunityStageCounterTest {
     }
 
     @isTest
-    static void placeholderTestMethod() {
-        System.assertEquals(true, true, 'Placeholder test');
+    static void testCountOpportunitiesByStageWithNoOpportunities() {
+        // Given
+        OpportunityStageCounter counter = new OpportunityStageCounter();
+
+        // When
+        Map<String, Integer> result = counter.countOpportunitiesByStage();
+
+        // Then
+        System.assertEquals(true, result.isEmpty(), 'Expected an empty map when no Opportunities in database');
     }
 }
